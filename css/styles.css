@@ -48,3 +48,49 @@ height: auto;
 .main-content{
   flex-grow: 1;
 }
+
+.site-header {
+margin-top: 50px;
+}
+
+.sitenav-list {
+display: flex;
+margin: 0;
+padding: 0;
+background-color: rgb(105, 136, 143);
+list-style: none;
+}
+
+.sitenav-item-link {
+  display: block;
+  color: #fff;
+
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+.sitenav-item-link:hover{
+  background-color: rgb(123, 154, 161);
+}
+
+.sitenav-item-has-children{
+  position: relative;
+z-index: 50;
+}
+
+.sitenav-item-has-children:hover .sitenav-item-children{
+  display: block;
+}
+
+
+
+.sitenav-item-children {
+position: absolute;
+width: max-content;
+display: none;
+list-style: none;
+padding: 0;
+margin: 0;
+background-color: rgb(105, 136, 143);
+}
